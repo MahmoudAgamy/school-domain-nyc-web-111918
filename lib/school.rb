@@ -8,7 +8,9 @@ class School
     @roster = {}
   end
   
-
+  def roster
+    @roster = {}
+  end
   
   def add_student(student_name, grade)
     if @roster.has_key?(grade)
@@ -29,10 +31,6 @@ class School
       @roster[grade] = sorted_value
     end
     @roster
-  end
-  
-  def roster
-    @roster = {}
   end
     
 end
